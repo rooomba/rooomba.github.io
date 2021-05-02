@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+}
+
+[data-animation] {
+      animation: var(--animn, none) var(--animdur, 0s) var(--animtf, linear) var(--animdel, 0s) var(--animic, infinite) var(--animdir, alternate) var(--animfm, none) var(--animps, running);
+    }
+
+@keyframes breathe {
+  0% {width: 0%;}
+  50% {width: 45%;}
+  100% {width: 0%;}
+
+}
+
+#jstoggle{
+  position: fixed;
+  width: 10%;
+  left:45%;
+  top: 98vh;
+}
+
+.rectangleLeft {
+  height: 100vh;
+  float: left;
+  background: black;
+  position: fixed;
+  animation-name: breathe;
+  animation-duration: 45s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.rectangleRight {
+  height: 100vh;
+  background: black;
+  position: fixed;
+  right: 0px;
+  animation-name: breathe;
+  animation-duration: 45s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.pages {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
